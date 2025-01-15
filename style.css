@@ -2,9 +2,8 @@ html, body {
     margin: 10px;
     padding: 10px;
     height: 100%;
-    font-family: Arial, sans-serif;
+    font-family: CustomFont;
     background-color: black;
-    background-image: url(./YhMOv47RAWMH6nQ4RftEtpu8.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -52,13 +51,15 @@ html {
 
 #Title {
     color: white;
-    font-size: 12rem;
+    font-size: 60px;
     font-family: 'CustomFont', sans-serif;
     text-align: center;
     text-decoration: none;
     transition: color 0.3s ease;
     position: relative;
-    letter-spacing: 5rem;
+    letter-spacing: 2rem;
+    float:left;
+    padding:200px
 }
 
 #Title a {
@@ -67,7 +68,7 @@ html {
 }
 
 #Title a:hover {
-    color: rgb(255, 200, 200);
+    color: rgb(218, 218, 218);
 }
 
 @font-face {
@@ -76,7 +77,7 @@ html {
 }
 
 .head {
-    background: linear-gradient(to bottom, rgb(181, 28, 28), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0,1), rgba(0, 0, 0, 0));
     height: 400px;
     width: 100%;
     position: fixed;
@@ -97,6 +98,14 @@ html {
     text-decoration: none;
     transition: color 0.3s ease;
     z-index: 2;
+    color: white;
+    font-size: 60px;
+    font-family: 'CustomFont', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    position: relative;
+    letter-spacing: 2rem;
 }
 
 .foot {
@@ -110,13 +119,28 @@ html {
     bottom: 0;
     z-index: 2;
 }
+.footer {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 2;
+    height: 400px;
+}
 
 .buttonLeft {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     margin: 100px 0;
     position: relative;
-    left: 1500px;
+    left: 1000px;
     top: 500px;
+    padding: 0px;
 }
 
 .buttonLeft a {
@@ -125,12 +149,11 @@ html {
 
 .buttonLeft button {
     background-color: transparent;
-    color: white;
+    color: rgba(255, 255, 255,0.1);
     font-size: 5rem;
     font-family: CustomFont;
     padding: 10px 10px;
-    border: solid 1px;
-    border-radius: 25px;
+    border-radius: 50px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s, box-shadow 0.3s ease;
     width: 100%;
@@ -139,12 +162,20 @@ html {
     margin: 0 auto;
     position: relative;
     top: 400px;
+    color:rgba(255,255,255,0.8);
+    font-size: 60px;
+    font-family: 'CustomFont', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    position: relative;
+    letter-spacing: 2rem;
+    float:left;
 }
 
 .buttonLeft button:hover {
-    background-color: linear-gradient(to bottom, rgb(181, 28, 28), rgba(0, 0, 0, 0));
-    opacity: 0.7;
-    box-shadow: 0 0 10px rgba(255, 200, 200, 0.8);
+   color:white;
+    opacity: 1;
 }
 
 .buttonLeft button:active {
@@ -153,13 +184,17 @@ html {
 }
 
 .logo {
-    height: 150px;
+    height: 75px;
 }
 
 .icons {
+    padding:350px;
     display: flex;
-    gap: 100px;
+    gap: 150px;
     align-items: center;
+    float:right;
+    margin-left: 100px;
+
 }
 
 #about, #achievements, #impact, #notableworks, #upcomingevents {
@@ -172,6 +207,7 @@ html {
     padding: 100px;
     color: white;
     text-align: center;
+
 }
 
 @media (max-width: 768px) {
@@ -180,11 +216,6 @@ html {
         letter-spacing: 2rem;
     }
 
-    .buttonRight button {
-        width: 80%;
-        font-size: 4rem;
-        height: 150px;
-    }
     .buttonLeft button {
         width: 80%;
         font-size: 4rem;
@@ -221,20 +252,17 @@ html {
         font-size: 3rem;
         height: 120px;
     }
-
-    .buttonRight button {
-        width: 100%;
-        font-size: 3rem;
-        height: 120px;
-    }
 }
 
 .buttons {
     margin-top: 10px;
+    width: 50%;
+    height: 100%;
+    float: left;
 }
 
 .empty-space {
-    height: 400px;
+    height: 1500px;
 }
 
 .buttonRight {
@@ -288,19 +316,31 @@ html {
     font-size: 5rem;
     font-family: CustomFont;
     overflow: auto;
+    background-image: url('./—Pngtree—academy\ awards\ and\ oscar_14906515.png'); /* Replace with the path to your image */
+    background-size: contain; /* Makes the image cover the entire div */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; ;/* Prevents the image from repeating */
 }
 .video-container {
-    display: flex;
-    justify-content: center; /* Centers the video horizontally */
-    margin: 50px auto; /* Adds spacing above and below */
-    max-width: 100%; /* Allows the container to expand */
-    padding-top: 100px;
-    float: left; /* Pushes the video further down */
+    justify-content: center; /* Centers the video horizontally */ /* Adds spacing above and below */
+    width: 50%;
+    float:left; /* Allows the container to expand  /* Pushes the video further down */
 }
 
 .video-container iframe {
-    width: 80%; /* Adjusts the width to be larger */
-    max-width: 1000px; /* Sets a maximum width for large screens */
-    height: 600px; /* Increases the height */
-    border: none; /* Removes border */
+    width: 100%; /* Adjusts the width to be larger */
+    max-width: 2000px; /* Sets a maximum width for large screens */
+    height: 1400px; /* Increases the height */
+    border: solid 0.1PX white;
+    border-radius: 250px;
+    position: relative;
+    top: 730px;
+    left: 500px; /* Removes border */
+}
+
+#imgg {
+    margin-top: 1927px;
+    float: left;
+    border-radius: 250px;
+    border: solid 100px rgba(255, 255, 255, 0.1);
 }
