@@ -1,0 +1,306 @@
+html, body {
+    margin: 10px;
+    padding: 10px;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    background-image: url(./YhMOv47RAWMH6nQ4RftEtpu8.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#neon-strips {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.neon-strip {
+    position: absolute;
+    width: 100%;
+    height: 9px;
+    z-index: -1;
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.strip-blue {
+    background-color: #d97000;
+    top: 0;
+}
+
+.strip-red {
+    background-color: #9c0805;
+    top: 20px;
+}
+
+.strip-coral {
+    background-color: #ee3f00;
+    top: 40px;
+}
+
+#Title {
+    color: white;
+    font-size: 12rem;
+    font-family: 'CustomFont', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    position: relative;
+    letter-spacing: 5rem;
+}
+
+#Title a {
+    color: white;
+    text-decoration: none;
+}
+
+#Title a:hover {
+    color: rgb(255, 200, 200);
+}
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('./RozanovaGEO-Demo-Thin.otf');
+}
+
+.head {
+    background: linear-gradient(to bottom, rgb(181, 28, 28), rgba(0, 0, 0, 0));
+    height: 400px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    z-index: 2;
+}
+
+#Ziya {
+    color: white;
+    font-size: 5rem;
+    font-family: CustomFont;
+    letter-spacing: 1px;
+    text-align: center;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    z-index: 2;
+}
+
+.foot {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    z-index: 2;
+}
+
+.buttonLeft {
+    text-align: center;
+    margin: 100px 0;
+    position: relative;
+    left: 1500px;
+    top: 500px;
+}
+
+.buttonLeft a {
+    text-decoration: none;
+}
+
+.buttonLeft button {
+    background-color: transparent;
+    color: white;
+    font-size: 5rem;
+    font-family: CustomFont;
+    padding: 10px 10px;
+    border: solid 1px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 1000px;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+    top: 400px;
+}
+
+.buttonLeft button:hover {
+    background-color: linear-gradient(to bottom, rgb(181, 28, 28), rgba(0, 0, 0, 0));
+    opacity: 0.7;
+    box-shadow: 0 0 10px rgba(255, 200, 200, 0.8);
+}
+
+.buttonLeft button:active {
+    background-color: black;
+    opacity: 0.3;
+}
+
+.logo {
+    height: 150px;
+}
+
+.icons {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+#about, #achievements, #impact, #notableworks, #upcomingevents {
+    padding: 100px;
+    color: white;
+    text-align: center;
+}
+
+.about, .achievements, .impact, .notablework, .upcomingevents {
+    padding: 100px;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    #Title {
+        font-size: 8rem;
+        letter-spacing: 2rem;
+    }
+
+    .buttonRight button {
+        width: 80%;
+        font-size: 4rem;
+        height: 150px;
+    }
+    .buttonLeft button {
+        width: 80%;
+        font-size: 4rem;
+        height: 150px;
+    }
+
+    .icons {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .foot {
+        font-size: 1rem;
+    }
+
+    #Ziya {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .head {
+        height: 300px;
+        padding: 0 10px;
+    }
+
+    #Title {
+        font-size: 6rem;
+        letter-spacing: 0.5rem;
+    }
+
+    .buttonLeft button {
+        width: 100%;
+        font-size: 3rem;
+        height: 120px;
+    }
+
+    .buttonRight button {
+        width: 100%;
+        font-size: 3rem;
+        height: 120px;
+    }
+}
+
+.buttons {
+    margin-top: 10px;
+}
+
+.empty-space {
+    height: 400px;
+}
+
+.buttonRight {
+    text-align: center;
+    margin: 100px 0;
+    position: relative;
+    right: 2000px;
+    top:-1000px;
+}
+
+.buttonRight a {
+    text-decoration: none;
+}
+
+.buttonRight button {
+    background-color: transparent;
+    color: white;
+    font-size: 5rem;
+    font-family: CustomFont;
+    padding: 10px 10px;
+    border: solid 1px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 1000px;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+    top: 400px;
+}
+
+.buttonRight button:hover {
+    background-color: linear-gradient(to bottom, rgb(181, 28, 28), rgba(0, 0, 0, 0));
+    opacity: 0.7;
+    box-shadow: 0 0 10px rgba(255, 200, 200, 0.8);
+}
+
+.buttonRight button:active {
+    background-color: black;
+    opacity: 0.3;
+}
+
+.about{
+    font-size: 5rem;
+    font-family: CustomFont;
+    overflow:auto;
+}
+
+.achievements{
+    font-size: 5rem;
+    font-family: CustomFont;
+    overflow: auto;
+}
+.video-container {
+    display: flex;
+    justify-content: center; /* Centers the video horizontally */
+    margin: 50px auto; /* Adds spacing above and below */
+    max-width: 100%; /* Allows the container to expand */
+    padding-top: 100px;
+    float: left; /* Pushes the video further down */
+}
+
+.video-container iframe {
+    width: 80%; /* Adjusts the width to be larger */
+    max-width: 1000px; /* Sets a maximum width for large screens */
+    height: 600px; /* Increases the height */
+    border: none; /* Removes border */
+}
