@@ -1,88 +1,51 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to top, #a2d4f5, #f0f8ff);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-h1, h2, h3 {
-    text-align: center;
-    color: #333;
+.container {
+  text-align: center;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
-form, table, .content {
-    margin: 20px auto;
-    width: 80%;
-    max-width: 800px;
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #003366;
 }
 
-form input[type="text"] {
-    padding: 8px;
-    width: 50%;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+input {
+  padding: 12px;
+  width: 80%;
+  font-size: 1.2rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    background: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #3399ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
-th, td {
-    padding: 12px;
-    border: 1px solid #ddd;
-    text-align: center;
+button:hover {
+  background-color: #007acc;
 }
 
-img {
-    width: 100px;
-    height: auto;
-    border-radius: 10px;
-}
-
-.footer {
-    text-align: center;
-    margin-top: 50px;
-    font-size: 0.9em;
-    color: #666;
-}
-
-@media screen and (max-width: 600px) {
-    form, table, .content {
-        width: 95%;
-    }
-
-    form input[type="text"] {
-        width: 90%;
-    }
-
-    img {
-        width: 80px;
-    }
-
-    th, td {
-        font-size: 14px;
-    }
-}
-
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-    form input[type="text"] {
-        width: 70%;
-    }
-
-    img {
-        width: 90px;
-    }
-}
-
-@media screen and (min-width: 1025px) {
-    form input[type="text"] {
-        width: 50%;
-    }
-
-    img {
-        width: 100px;
-    }
+.result {
+  margin-top: 20px;
+  font-size: 1.4rem;
 }
